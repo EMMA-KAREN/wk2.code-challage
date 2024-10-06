@@ -1,20 +1,20 @@
 body {
     font-family: Arial, sans-serif;
     font-family: Arial, sans-serif;
-    background-color: #250a1f;
+    background-color: #7e5c76;
     margin: 0;
     padding: 20px;
     text-align: center;
   }
 
 h1 {
-    color: #0e5eaf;
+    color: #070808;
     margin-bottom: 20px;
   ;
 }
 
 h2 {
-    color: #1a293a;
+    color: #040c14;
     
 }
   .container {
@@ -29,7 +29,7 @@ h2 {
     height: max-content;
    max-height: 90%;
     max-width: 60%; /* Sets a max width for the form */
-    background-color: #b16666;
+    background-color: #a05f5f;
     border-radius: 8px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     padding: 20px;
@@ -45,7 +45,7 @@ h2 {
   input, textarea, select {
     width: 100%;
     padding: 5px;
-    border: 1px solid #ccc;
+    border: 1px solid #a8bea6;
   }
   
   button {
@@ -57,7 +57,7 @@ h2 {
   }
   
   button:hover {
-    background-color: #d0b0d4;
+    background-color: #c8d3cc;
   }
   
   #patientList {
@@ -67,9 +67,10 @@ h2 {
   }
   
   .patient-item {
-    border: 1px solid #882b2b;
+    border: 1px solid #9e2323;
     padding: 5px;
     margin-bottom: 10px;
+    background-color: #444d44;
   }
   
 
@@ -83,7 +84,7 @@ h2 {
   }
   footer {
     margin-top: 20px;
-    color: #6c757d;
+    color: #c9d6e0;
 }
 
 .search-container {

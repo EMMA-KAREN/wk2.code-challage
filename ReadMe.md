@@ -82,42 +82,37 @@ This JavaScript code provides the core functionality for a basic rehab patient t
 ### Functionality:
 
 ### Event Listeners:
+### 1.Form Submission:
+Prevents default form submission behavior.Extracts patient data from form fields.Validates input (all required fields are filled).
+###  2.If editing an existing patient:
+ Updates the corresponding object in the patients array clears the form and resets the editingPatientIndex flag.
+ Displays a success message and updates the patient list.
 
- #### 1.Form Submission:
-                     Prevents default form submission behavior.
-                     Extracts patient data from form fields.
-                     Validates input (all required fields are filled).
-
- ####  2.If editing an existing patient:
-                    Updates the corresponding object in the patients array.
-                    clears the form and resets the editingPatientIndex flag.
-                    Displays a success message and updates the patient list.
-
-#### 3.If adding a new patient:
+### 3.If adding a new patient:
 Pushes a new object with patient data to the patients array.
 Clears the form.
 Displays a success message and updates the patient list.
 
-#### 4.Search Input Keyup:
+### 4.Search Input Keyup:
 Gets the search term entered in the search input field (converted to lowercase Calls the displayPatients function with the search term.
    
-#### 5.Search Button Click (if implemented):
+### 5.Search Button Click (if implemented):
     Triggers the same functionality as the search input keyup event.
 
- #### 6.displayPatients Function:
+ ### 6.displayPatients Function:
  Clears the existing patient list content. Initializes a patientsFound flag set to false.Iterates through the patients array:If there's no search term or the patient's name (lowercase) includes the search term: Sets patientsFound to true.Creates a new HTML element (div) for the patient.Sets appropriate class names for the patient item and priority level.
 
- #### buttons
+ ## buttons
 Constructs HTML content for the patient, including name, guardian details, stage, progress, phone, email, and edit/delete buttons. Appends the patient element to the patientList container in the HTML.
 Attaches click event listeners to the edit and delete buttons:
 
-#### 7.Edit Button:
+### 7.Edit Button:
 Populates the form with the selected patient's data.Sets the editingPatientIndex flag to the patient's index in the array. Displays the updated patient list (without hiding the current item).
    
-#### 8.Delete Button:
+### 8.Delete Button:
 Removes the patient from the patients array based on the index.
     
-#### 9.Updates the displayed patient list.
+### 9.Updates the displayed patient list.
 If no patients match the search term after iterating, displays a message indicating "No patient found by that name."
 
 
@@ -137,4 +132,4 @@ Contact details (mumokaren@gmail.com, 079792951, )
 
 ### License
 
-*LIcenced under the [MT-licence]https://github.com/EMMA-KAREN/my-model-pertfolio/blob/master/LICENCE.md)
+*LIcenced under the [MT-licence]https://github.com/EMMA-KAREN/wk2.code-challage/blob/master/LICENCE.md)
